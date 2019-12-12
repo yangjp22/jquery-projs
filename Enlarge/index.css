@@ -1,0 +1,27 @@
+*{margin:0;padding:0;}
+
+img{vertical-align: middle;}
+
+h3{
+    width: 500px;
+    margin: 30px auto;
+}
+
+ul{
+    width: 500px;
+    margin:70px auto;
+}
+
+ul li{
+    list-style: none;
+    float: left;
+    border:1px solid #ccc;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+.big-img{
+    position: absolute;
+    left:0;
+    top:0;
+}

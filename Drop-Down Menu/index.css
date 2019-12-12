@@ -1,0 +1,33 @@
+*{margin:0;padding:0}
+#fengyunbang{
+    width: 140px;
+    padding:5px;
+    border: 1px solid #000;
+    margin:50px auto;
+    /*background-color: #0066ff;*/
+    background-color: #ccc;
+    /*color:white;*/
+    color: black;
+}
+#fengyunbang li{
+    list-style-type:none;
+    line-height: 24px;
+}
+#fengyunbang li.on ul{
+    display: block;
+    background-color: mediumpurple;
+    color: red;
+}
+#fengyunbang li.on span{
+    background-image: url('images/open.gif');
+}
+
+#fengyunbang ul{
+    margin-left:20px;
+    display:none;
+}
+#fengyunbang span{
+    background: url('images/close.gif') no-repeat left center;
+    padding-left:20px;
+    cursor:pointer;
+}

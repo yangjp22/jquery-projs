@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4{
+    width: 500px;
+    margin: 30px auto 10px ;
+}
+
+div{
+    margin: 80px auto;
+    overflow: hidden;
+    width: 600px;
+    height: 161px;
+}
+
+ul{
+    list-style: none;
+    width: 1800px;
+    height: 161px;
+    background-color: #000;
+}
+
+ul>li{
+    height: 161px;
+    float:left;
+}
+
+ul>li>img{
+    height: 161px;
+    width: 300px;
+}

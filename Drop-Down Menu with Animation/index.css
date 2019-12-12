@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4{
+    width: 405px;
+    margin: 20px auto;
+}
+
+.nav{
+    width: 400px;
+    height: 50px;
+    list-style:none;
+    background-color: red;
+    margin: 80px auto;
+}
+.nav>li{
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.sub{
+    list-style: none;
+    background-color: mediumpurple;
+    display: none;
+}
+.sub li{
+    border-bottom: 1px dashed #ccc;
+}

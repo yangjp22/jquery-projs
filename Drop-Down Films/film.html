@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Film</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box {
+			width: 300px;
+			height: 450px;
+			/*border: 1px solid #000;*/
+			margin: 50px auto;
+		}
+
+		.box>h1{
+			font-size: 20px;
+			color: #FF1493;
+			line-height: 35px;
+			padding-left: 10px;
+			border-bottom: 1px dashed #ccc;
+		}
+
+		ul > li {
+			list-style: none;
+			padding: 5px 10px;
+			border: 1px dashed #ccc;
+		}
+
+		ul>li:nth-child(2n){
+			color: deeppink;
+		}
+
+		ul>li>span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: #ccc;
+			text-align: center;
+			line-height: 20px;
+			margin-right: 10px;
+		}
+
+		.content{
+			overflow: hidden;
+			margin-top: 5px;
+			display: none;
+		}
+		.content>img{
+			width: 80px;
+			height: 120px;
+			float: left;
+		}
+		.content>p{
+			width: 180px;
+			height: 120px;
+			float: right;
+			font-size: 12px;
+			line-height: 20px;
+			text-overflow: ellipsis;
+			color: #000;
+			/*white-space: nowrap;*/
+			overflow: hidden;
+		}
+		.current  .content{
+			display: block;
+		}
+
+	</style>
+	<script src="jquery-1.12.4.min.js"></script>
+	<script>
+		$(function(){
+			$("li").mouseenter(function () {
+				$(this).addClass('current');
+      });
+			$("li").mouseleave(function () {
+				$(this).removeClass('current');
+      });
+		})
+	</script>
+
+</head>
+<body>
+	<div class="box">
+		<h1>Most Popular Movies</h1>
+		<ul>
+			<li><span>1</span>The Irishman
+				<div class="content">
+					<img src="m1.jpg" alt="" />
+					<p>Frank "The Irishman" Sheeran is a man with a lot on his mind. The former labor union high official and hitman, learned to kill serving in Italy during the Second World War. He now looks back on his life and the hits that defined his mob career, maintaining connections with the Bufalino crime family. In particular, the part he claims to have played in the disappearance of his life-long friend, Jimmy Hoffa, the former president of the International Brotherhood of Teamsters, who mysteriously vanished in late July 1975 at the age of 62.</p>
+				</div>
+			</li>
+			<li><span>2</span>Knives Out
+				<div class="content">
+					<img src="m2.jpg" alt="" />
+					<p>When renowned crime novelist Harlan Thrombey is found dead at his estate just after his 85th birthday, the inquisitive and debonair Detective Benoit Blanc is mysteriously enlisted to investigate. From Harlan's dysfunctional family to his devoted staff, Blanc sifts through a web of red herrings and self-serving lies to uncover the truth behind Harlan's untimely death.</p>
+				</div>
+			</li><li><span>3</span>No Time to Die
+				<div class="content">
+					<img src="m3.jpg" alt="" />
+					<p>Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.</p>
+				</div>
+			</li>
+			<li><span>4</span>Black Widow
+				<div class="content">
+					<img src="m4.jpg" alt="" />
+					<p>A film about Natasha Romanoff in her quests between the films Civil War and Infinity War.</p>
+				</div>
+			</li>
+			<li><span>5</span>Frozen II
+				<div class="content">
+					<img src="m5.jpg" alt="" />
+					<p>Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.</p>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+</body>
+</html>

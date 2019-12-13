@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+div{
+    width: 450px;
+    height: 450px;
+    /*border: 1px solid #000;*/
+    margin: -80px auto 0 auto;
+}
+
+.left{
+    position: absolute;
+    right: 100px;
+    top: 313px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    line-height: 100px;
+    text-align: center;
+}
+
+div>span{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+div>span>img{
+    position: absolute;
+    z-index: -3;
+}
+
+div .cur{
+    padding: 5px;
+    background: green;
+}
+
+p{
+    width: 450px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    background: red;
+    margin: 10px auto 50px;
+}

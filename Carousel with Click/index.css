@@ -1,0 +1,63 @@
+*{margin:0;padding:0;}
+img{
+    vertical-align: middle;
+}
+
+h3{
+    width: 441px;
+    margin: 40px auto;
+}
+ul li,ol li{
+    list-style: none;
+    float: left;
+}
+.scroll-wrap{
+    width: 400px;
+    border:5px solid #ccc;
+    margin:100px auto 0;
+    position: relative;
+}
+.scoller{
+    width: 400px;
+    height: 307px;
+    overflow: hidden;
+    position: relative;
+}
+.scoller ul{
+    width: 2400px;
+    height: 307px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.scroll-wrap span{
+    position: absolute;
+    left:-21px;
+    top:127px;
+    width:52px;
+    height: 52px;
+    cursor: pointer;
+    background: url('images/arr.png') no-repeat left top;
+}
+.scroll-wrap span.arrow_right{
+    right:-21px;
+    left:auto;
+    background-position: right top;
+}
+.scroll-wrap ol{
+    position: absolute;
+    left:136px;
+    bottom:-30px;
+    height:13px;
+}
+.scroll-wrap ol li{
+    width: 13px;
+    height:100%;
+    text-indent: -99999em;
+    cursor: pointer;
+    margin-right:10px;
+    background: url('images/00.png') no-repeat left top;
+}
+.scroll-wrap ol li.on{
+    background-position: left bottom;
+}
